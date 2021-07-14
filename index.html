@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Anjali Tambe</title>
+        <link rel="icon" href="/assets/img/favicon.png">
+        </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo"><img style="position: absolute; height: 20px;  z-index: -10; opacity: 80%;" src="assets/img/favicon.png" height="inherit">    Anjali Tambe</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
+                        <li class="nav__item"><a href="/assets/document/sample.pdf" target="_blank" class="nav__link">Resume</a></li>
+                        <li class="nav__item"><a href="#footer" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    
+                    <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Anjali</span></h1>
+                    <div class="home__desc" style="line-height: 1rem;" >
+                    
+                    <h3>Software Engineer with 3 years of experience</h3>
+                    <h3>Master's student pursuing <a  href="https://www.heinz.cmu.edu/programs/information-systems-management-master/16-month" target="_blank">MISM@CMU</a></h3>
+                    </div>
+                    <br>
+                    <a href="#work" style="border: 0.15rem solid #F9A826;" class="button">Projects</a>
+                    <a href="/assets/document/sample.pdf" target="_blank" style="background-color: #fff;color:#F9A826;border: 0.15rem solid #F9A826;" class="button">My Resume</a>
+                </div>
+
+                <div class="home__social">
+                    <a href="https://in.linkedin.com/in/anjalitambe" target="_blank" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/anjalitambe" target="_blank" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                    <a href="mailto:anjali.r.tambe@gmail.com" class="home__social-icon"><i class='bx bx-envelope' ></i></a>
+                </div>
+
+                <div class="home__img">    
+                    <img src="assets/img/balance.svg" alt="">
+                </div>
+            </section>
+            <!--===== WORK =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">Projects</h2>
+            
+                <div id="FilterProjectContainer" class="work__list">
+                    <button class="btnfilter selectedbtn" onclick="filterSelection('all')"> Show all</button>
+                    <button class="btnfilter" onclick="filterSelection('java')"> Java</button>
+                    <button class="btnfilter" onclick="filterSelection('python')"> Python</button>
+                    <button class="btnfilter" onclick="filterSelection('data')"> Data</button>
+                    <button class="btnfilter" onclick="filterSelection('pp')"> Power Platform</button>
+                </div>
+                     
+                <div>
+                <div class="work__container proj__container bd-grid">
+                    <div class="proj__img work__img java python">
+                        <a href="/project-pages/d3-project.html" target="_blank"><img src="assets/img/d3-project.png" alt="" ></a>
+                        <a href="/project-pages/d3-project.html" target="_blank" class="proj-see-more" >See More&nbsp;<i class="bx bx-right-arrow-alt"></i></a>
+                        <a href="github.com"  target="_blank" class="proj-git" ><i class="bx bxl-github"></i></a>
+                    </div>
+                    <div class="proj__img work__img java data">
+                        <a href="/project-pages/fast-fleet.html"  target="_blank"><img src="assets/img/fast-fleet.PNG" alt=""></a>
+                        <a href="/project-pages/fast-fleet.html"  target="_blank" class="proj-see-more" >See More&nbsp;<i class="bx bx-right-arrow-alt"></i></a>
+                        <a href="github.com" class="proj-git"  target="_blank"><i class="bx bxl-github"></i></a>
+                        <a  target="_blank" href="https://dynamics.microsoft.com/en-us/guidedtour/power-platform/azure-low-code-app-development-with-power-apps/1/1" target="_blank" class="proj-git" style="left: 1.25rem;" ><i class="bx bx-globe"></i></a>
+
+                    </div>
+                    <div class="proj__img work__img pp">
+                        <a  target="_blank" href="/project-pages/save-tomatoes.html"><img src="assets/img/save-tomatoes.PNG" alt=""></a>
+                        <a  target="_blank" href="/project-pages/save-tomatoes.html" class="proj-see-more" >See More&nbsp;<i class="bx bx-right-arrow-alt"></i></a>
+                        <a  target="_blank" href="github.com" class="proj-git" ><i class="bx bxl-github"></i></a>
+                        <a  target="_blank" href="github.com" class="proj-git" style="left: 1.25rem;" ><i class="bx bx-globe"></i></a>
+
+                    </div>
+                    <div class="proj__img work__img pp data">
+                        <a  target="_blank" href="/project-pages/easy-emi.html"><img src="assets/img/easypay.PNG" alt=""></a>
+                        <a  target="_blank" href="/project-pages/easy-emi.html" class="proj-see-more" >See More&nbsp;<i class="bx bx-right-arrow-alt"></i></a>
+                        <a  target="_blank" href="github.com" class="proj-git" ><i class="bx bxl-github"></i></a>
+
+                    </div>
+                    <div class="proj__img work__img python">
+                        <a  target="_blank" href="#"><img src="assets/img/Slide6.PNG" alt=""></a>
+                        <a  target="_blank" href="#" class="proj-see-more" >See More&nbsp;<i class="bx bx-right-arrow-alt"></i></a>
+                        <a  target="_blank" href="github.com" class="proj-git" ><i class="bx bxl-github"></i></a>
+
+                    </div>
+                    <div class="proj__img work__img java">
+                        <a  target="_blank" href="/project-pages/speed-blaze.html"><img src="assets/img/speed-blaze.png" alt=""></a>
+                        <a  target="_blank" href="/project-pages/speed-blaze.html" class="proj-see-more" >See More&nbsp;<i class="bx bx-right-arrow-alt"></i></a>
+                        <a  target="_blank" href="github.com" class="proj-git" ><i class="bx bxl-github"></i></a>
+                        <a  target="_blank" href="https://www.youtube.com/watch?v=RgdZJhfxTTw" style="left: 1.25rem;" class="proj-git" ><i class="bx bx-play"></i></a>
+
+                    </div>
+                </div>
+                </div>
+            </section>
+            
+            <a  href="/project-pages/all-projects.html" target="_blank" style="color: #F9A826;"><p style="text-align: center; "><u>All Projects</u>&nbsp;<i class="bx bx-right-arrow-alt"></i></p></a>
+            
+            <script>
+               </script>
+            
+
+            <!--===== Certifications =====-->
+            <section class="work section">
+                <h2 class="section-title">Certifications</h2>
+
+                <div class="work__container bd-grid">
+                    <div class="work__img">
+                        <img src="assets/img/PL900.png" alt="" style="padding: 70px;">
+                        <div><a href="#home">PL 900: Power Platform</a></div>                       
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/DA100.png" alt="" style="padding: 50px;">
+                        <div><a href="#home">DA 100: Data Analyst Associate</a></div>
+                    </div>
+                    <div class="work__img">
+                        <img src="assets/img/AZ900.png" alt="" style="padding: 70px;">
+                        <div><a href="#home">AZ 900: Azure Fundamentals</a></div>
+                    </div>
+                </div>
+            </section>
+
+           
+        <!--===== FOOTER =====-->
+        <footer class="footer" id="footer">
+            <br>
+            
+            <p  class="footer__title">Get in touch</p>
+            <a href="/assets/document/sample.pdf" target="_blank" class="footer-button" >My Resume</a>
+                
+            <div class="footer__social">
+                <br>
+                <a href="https://in.linkedin.com/in/anjalitambe" target="_blank" class="footer__icon"><i class='bx bxl-linkedin' ></i></a>
+                <a href="https://github.com/anjalitambe" target="_blank" class="footer__icon"><i class='bx bxl-github' ></i></a>
+                <a href="mailto:anjali.r.tambe@gmail.com" class="footer__icon"><i class='bx bx-envelope' ></i></a>
+                <p>mail:&nbsp;<a href="mailto:anjali.r.tambe@gmail.com" class="footer-link" ><u>anjali.r.tambe@gmail.com</u></p></a>
+                
+            </div>
+            
+        </footer>
+                
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
